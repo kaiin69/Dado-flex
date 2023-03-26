@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,700);
+/* aca estamos importando un link de la pagina de las fuentes */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #333;
+	color: #fff;
+}
+/*al body le asignamos color de fondo tamaño de letra y color */
+header {
+	padding: 20px;
+}
+/* estamos dando un espacio de izquierda a derecha a los textos*/
+
+h1{
+	font-weight: 700;
+	text-transform: uppercase;
+}
+/* estamos dando tamaño al titulo y convirtiendo la minisucla a mayuscula la etiqyeta h1 */
+
+p{
+	font-weight: 300;
+}
+/* a la eqtiqueta p se le esta adndo un tamaño de 300 pixeles al parrafo */
+a {
+	color: gray;
+}
+/* color del hipervinvuclo que las letas se vean de color gris */
+section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+/* aca estamos indicando que trabajaremos la clase section con flexbox, justify content lo que hace es que no centra
+y wrap que que lo que hay en el contenedor se ajuste automaticamente */
+
+[class^="cara-"]{
+	display: flex;
+	margin: 1em;
+	width: 150px;
+	height: 150px;
+	padding: 15px;
+	background: #FEFEF6;
+	border-radius: 10%;
+}
+
+.cara-uno{
+	justify-content: center;
+	align-items: center;
+}
+/* clase cara-uno se le esta dando unbicacion al punto justo en el centro del dado */
+.cara-dos{
+	justify-content: space-between;
+}
+/* clase  que el punto numero 1 se ajuste arriba a la derecha */
+.cara-dos .punto:nth-child(2){
+	align-self: flex-end;}
+/* clase cara-dos que el punto dos se ubica en la parte inferior*/	
+.cara-tres{
+	justify-content: space-between;
+}
+/*clase cara-tres se le esta dando la ubicacion al punto 1 que  se ajuste en la parte de arriba a la izquierda */
+.cara-tres .punto:nth-child(2){
+	align-self: center;
+}
+/* estamos indicando que la cara 3 y el punto 2 su ubiquen en el centro*/
+.cara-tres .punto:nth-child(3){
+	align-self: flex-end;
+}
+/* estamos indicando que la cara 3 y el punto 2 su ubiquen en la aprte de abajo*/
+.cara-cuatro{
+	justify-content: space-between;
+}
+/*clase cara cuatro se le esta indicando que el punto s ubique en la parte superior izquierda */
+.cara-cuatro .columna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* se le esta indicando a la cara-cuatro  que se divida los putnos por la culumnas y se ajusten con el space betweem*/
+.cara-cinco{
+	display: flex;
+	justify-content: space-between;
+}
+/* se le esta indicando a la cara-cinco q se ajuste  ala izquierda superior*/
+.cara-cinco .columna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* clase cara-cinco  que ajsute los puntos a las columnas  y con space-between queden en las esquinas */
+.cara-cinco .medio{
+	align-self: center;
+}
+/* clase cara-cinco.medio se  le dice que ajuste el punto justo en el centro*/
+.cara-seis{
+	display: flex;
+	justify-content: space-between;
+}
+/* clase cara-seis  indicamos que los elementos se ajusten a los extremos*/
+.cara-seis .columna{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* en la clase cara-seis .column lo que hacemos es ubicar la columnas a que se ajusten */
+
+.punto {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: black;
+	box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}
+/* clase .punto se le da la siguientes caracteristicas al punto coloranlto ancho color del borde*/
